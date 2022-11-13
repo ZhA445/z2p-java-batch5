@@ -44,8 +44,22 @@ public class Map_Testing {
 		System.out.println("values: " + values);
 		
 		//remove
+		foods.remove("kiwi");
+		System.out.println("After remove, " + foods.get("kiwi"));
+		
+		//foods.keySet().removeIf( str -> str.contains("o"));
+		//foods.values().removeIf(str -> str.equals("fruit"));
+		//System.out.println("After remove, foods: " + foods);
 		
 		//update
+		foods.replace("mango", "cake");
+		System.out.println("After update: " + foods);
+		
+		foods.compute("coffee", (k,v) -> "cake");
+		System.out.println("value of coffee: "+ foods.get("coffee"));
+		
+		foods.compute("water melon", (k,v) -> "fruit");
+		System.out.println("foods: " + foods);
 		
 	}
 	
