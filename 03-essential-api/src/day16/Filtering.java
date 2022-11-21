@@ -19,10 +19,10 @@ public class Filtering {
 		//Stream<User> streams = users.stream();
 		
 		users.stream()
-			.filter(user -> user.getRole().equals("staff"))
-			//.filter(User::IsStaff)
+			//.filter(user -> user.getRole().equals("staff"))
+			.filter(User::IsStaff)
 			
-			.forEach(obj -> {
+			.forEach(obj -> { //create stream
 				System.out.println("Name : " + obj.getName());
 				System.out.println("Roel : " + obj.getRole());
 				System.out.println("--------------");

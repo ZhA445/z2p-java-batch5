@@ -40,9 +40,6 @@ public class Demo {
 					break;
 				}
 			}
-			
-			
-
 		} else if (num == 2) {
 			int maxMark = stud[0].getMark();
 			for (var i = 1; i < stud.length; i++) {
