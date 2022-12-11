@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.BookAdd">
+   <children>
+      <Label layoutX="189.0" layoutY="34.0" text="New Book Information">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="107.0" layoutY="72.0" prefHeight="2.0" prefWidth="392.0" />
+      <Label layoutX="122.0" layoutY="189.0" prefHeight="26.0" prefWidth="66.0" text="Book Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="140.0" prefHeight="25.0" prefWidth="65.0" text="Book Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_title" layoutX="252.0" layoutY="137.0" prefHeight="31.0" prefWidth="262.0" promptText="Title" />
+      <Button layoutX="264.0" layoutY="489.0" mnemonicParsing="false" onAction="#btn_logout_click" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #000000;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txt_price" layoutX="252.0" layoutY="187.0" prefHeight="31.0" prefWidth="262.0" promptText="Price" />
+      <Label layoutX="121.0" layoutY="240.0" prefHeight="26.0" prefWidth="85.0" text="Publish Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txt_publish" layoutX="252.0" layoutY="238.0" prefHeight="31.0" prefWidth="262.0" promptText="Choose" />
+      <Label layoutX="122.0" layoutY="295.0" prefHeight="26.0" prefWidth="85.0" text="Category">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbo_category" layoutX="252.0" layoutY="292.0" prefHeight="31.0" prefWidth="262.0" promptText="Choose Category" />
+      <Label layoutX="121.0" layoutY="352.0" prefHeight="26.0" prefWidth="85.0" text="Author">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbo_author" layoutX="251.0" layoutY="350.0" prefHeight="31.0" prefWidth="262.0" promptText="Choose Author" />
+      <Button layoutX="251.0" layoutY="413.0" mnemonicParsing="false" onAction="#btn_add_click" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #6666ff;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="345.0" layoutY="413.0" mnemonicParsing="false" onAction="#btn_reset_click" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #cc99ff;" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="437.0" layoutY="413.0" mnemonicParsing="false" onAction="#btn_back_click" prefHeight="31.0" prefWidth="75.0" style="-fx-background-color: #75a3a3;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="65.0" layoutY="471.0" prefHeight="3.0" prefWidth="495.0" />
+      <Label layoutX="123.0" layoutY="94.0" prefHeight="26.0" prefWidth="75.0" text="Book Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_code" layoutX="252.0" layoutY="91.0" prefHeight="31.0" prefWidth="262.0" promptText="Code" />
+   </children>
+</AnchorPane>

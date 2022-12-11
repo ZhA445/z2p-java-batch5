@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:controller="com.mmit.controller.Authors" prefHeight="596.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="28.0" layoutY="50.0" prefHeight="270.0" prefWidth="734.0">
+         <content>
+            <TableView fx:id="tbl_authors" prefHeight="269.0" prefWidth="731.0">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="49.60001069307327" text="id" />
+                <TableColumn fx:id="col_name" prefWidth="143.20000839233398" text="Name" />
+                  <TableColumn fx:id="col_birthday" prefWidth="167.20001220703125" text="Birthday" />
+                  <TableColumn fx:id="col_township" prefWidth="188.79998779296875" text="Native Town" />
+                  <TableColumn fx:id="col_created_by" prefWidth="168.0" text="Created By" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="28.0" layoutY="336.0" prefHeight="190.0" prefWidth="734.0" style="-fx-background-color: #c2c2d6;">
+         <children>
+            <TextField fx:id="txt_name" layoutX="367.0" layoutY="26.0" prefHeight="35.0" prefWidth="321.0" promptText="Author Name" />
+            <TextField fx:id="txt_township" layoutX="367.0" layoutY="76.0" prefHeight="35.0" prefWidth="321.0" promptText="Native Town" />
+            <DatePicker fx:id="txt_birthday" layoutX="367.0" layoutY="129.0" prefHeight="35.0" prefWidth="321.0" promptText="Birthday" />
+            <Button layoutX="76.0" layoutY="41.0" mnemonicParsing="false" onAction="#btn_add_click" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: #6666ff;" text="Add" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="201.0" layoutY="41.0" mnemonicParsing="false" onAction="#btn_edit_click" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: #ffb84d;" text="Edit" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="76.0" layoutY="111.0" mnemonicParsing="false" onAction="#btn_delete_click" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: #ff3333;" text="Delete" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="201.0" layoutY="111.0" mnemonicParsing="false" onAction="#btn_back_click" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: #75a3a3;" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="370.0" layoutY="549.0" mnemonicParsing="false" onAction="#btn_logout_click" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: #000000;" text="Logout" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
