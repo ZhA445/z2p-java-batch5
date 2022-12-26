@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="270.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="base.controller.BookReturn">
+   <children>
+      <Pane prefHeight="270.0" prefWidth="466.0" style="-fx-background-color: #d633ff;">
+         <children>
+            <Label layoutX="197.0" layoutY="18.0" text="Return">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="143.0" layoutY="55.0" prefHeight="3.0" prefWidth="163.0" />
+            <TextField fx:id="txt_memberid" layoutX="112.0" layoutY="85.0" prefHeight="35.0" prefWidth="225.0" promptText="Member Id" />
+            <TextField fx:id="txt_bookcode" layoutX="112.0" layoutY="137.0" prefHeight="35.0" prefWidth="225.0" promptText="Book Code" />
+            <Button layoutX="150.0" layoutY="210.0" mnemonicParsing="false" onAction="#btn_done_click" prefHeight="28.0" prefWidth="56.0" style="-fx-background-color: #000000;" text="Done" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="244.0" layoutY="210.0" mnemonicParsing="false" onAction="#btn_back_click" prefHeight="28.0" prefWidth="56.0" style="-fx-background-color: #000000;" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

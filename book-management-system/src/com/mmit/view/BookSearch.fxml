@@ -11,15 +11,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:controller="com.mmit.controller.BookSearch" prefHeight="558.0" prefWidth="733.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<AnchorPane prefHeight="558.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mmit.controller.BookSearch">
    <children>
       <Pane layoutX="17.0" layoutY="25.0" prefHeight="91.0" prefWidth="701.0" style="-fx-background-color: #ffa31a;">
          <children>
             <TextField fx:id="txt_category" layoutX="14.0" layoutY="28.0" prefHeight="35.0" prefWidth="196.0" promptText="Category " />
             <TextField fx:id="txt_author" layoutX="227.0" layoutY="28.0" prefHeight="35.0" prefWidth="196.0" promptText="Author" />
             <TextField fx:id="txt_title" layoutX="438.0" layoutY="28.0" prefHeight="35.0" prefWidth="196.0" promptText="Title" />
-            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="646.0" layoutY="28.0" onMouseClicked="#search_click" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="search_click" fitHeight="35.0" fitWidth="37.0" layoutX="646.0" layoutY="28.0" onMouseClicked="#search_click" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../Photos/Search.png.png" />
                </image>
